@@ -15,7 +15,7 @@ class Server():
         self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server.bind((self.bind_ip, self.bind_port))
 
-        self.server.listen(2)
+        self.server.listen(10)
         
         self.clients = []
 
